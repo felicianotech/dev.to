@@ -30,7 +30,7 @@ jobs:
           command: |
             bundle install --path vendor/bundle
             bundle exec chromedriver-update
-            yarn install
+            yarn install --update-checksums
             curl -o ./cc-test-reporter -sSL https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64
             chmod +x ./cc-test-reporter
             sudo apt-get install -y postgresql-client
